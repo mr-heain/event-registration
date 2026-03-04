@@ -4,8 +4,7 @@ var statusMsg = document.getElementById("statusMsg");
 
 regForm.onsubmit = function(e) {
     e.preventDefault();
-
-    // Simplified variable names
+    
     var name = document.getElementById("name");
     var email = document.getElementById("email");
     var phone = document.getElementById("phone");
@@ -19,7 +18,6 @@ regForm.onsubmit = function(e) {
 
     var ok = true;
 
-    // Validation checks
     if (name.value == "") { name.className = "redBorder"; ok = false; } 
     else { name.className = "greenBorder"; }
 
@@ -57,6 +55,5 @@ regForm.onsubmit = function(e) {
         statusMsg.style.color = "green";
 
         regForm.reset();
-        // Removed setTimeout - borders and message will now stay until next interaction
     }
 }

@@ -1,14 +1,13 @@
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-    background-color: #f0f8ff; /* AliceBlue */
+    background-color: #f0f8ff;
     margin: 0;
     padding: 20px;
 }
 
 form {
     background-color: white;
-    /* This makes it auto-fix to browser size */
     width: 90%; 
     max-width: 500px; 
     min-width: 300px;
@@ -40,8 +39,7 @@ th, td {
 }
 
 th {
-    background-color: #ffeb3b; /* More modern yellow */
-}
+    background-color: #ffeb3b;}
 
 footer {
     margin-top: 50px;
