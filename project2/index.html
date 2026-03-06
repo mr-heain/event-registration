@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>College Event Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h2 align="center">College Workshop Registration</h2>
+    <p align="center">Technical seminars on Java, Python, and C++.</p>
+
+    <form id="regForm">
+        <fieldset>
+            <legend>Personal Information</legend>
+            Name: <input type="text" id="name"><br><br>
+            Email: <input type="email" id="email"><br><br>
+            Phone: <input type="tel" id="phone"><br><br>
+            DOB: <input type="date" id="dob"><br><br>
+            Gender: 
+            <input type="radio" name="g" value="Male"> Male
+            <input type="radio" name="g" value="Female"> Female
+        </fieldset>
+
+        <fieldset>
+            <legend>Event Selection</legend>
+            Workshop: 
+            <select id="event">
+                <option value="">--Select--</option>
+                <option value="Java">Java</option>
+                <option value="Python">Python</option>
+            </select><br><br>
+            Mode: 
+            <input type="radio" name="m" value="Online"> Online
+            <input type="radio" name="m" value="Offline"> Offline
+        </fieldset>
+
+        <fieldset>
+            <legend>Additional Details</legend>
+            College: <input type="text" id="college"><br><br>
+            Upload ID: <input type="file" id="idProof"><br><br>
+            Comments: <br>
+            <textarea id="comments" rows="3" cols="30"></textarea>
+        </fieldset>
+
+        <p><input type="checkbox" id="confirm"> I confirm details are correct.</p>
+
+        <div id="statusMsg" style="text-align: center; font-weight: bold;"></div>
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+
+    <h3 align="center">Registered Participants</h3>
+    <table border="1" id="pTable">
+        <thead>
+            <tr>
+                <th>Name</th><th>Email</th><th>Phone</th><th>Event</th><th>Mode</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Hariharan S</td>
+                <td>kumaravelat2005@gmail.com</td>
+                <td>8056194886</td>
+                <td>Java</td>
+                <td>Offline</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>

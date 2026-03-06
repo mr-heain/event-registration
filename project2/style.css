@@ -1,0 +1,62 @@
+/* Assignment 2 - Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff; /* Light blue background */
+    padding: 20px;
+}
+
+form {
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px; /* Rounded corners */
+    width: 500px;
+    margin: 0 auto; /* Centering the form */
+    box-shadow: 5px 5px 10px #888888;
+}
+
+fieldset {
+    margin-bottom: 15px;
+    border: 1px solid #3498db;
+}
+
+legend {
+    font-weight: bold;
+    color: #3498db;
+}
+
+button {
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button[type="submit"] {
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+}
+
+button[type="submit"]:hover {
+    background-color: #27ae60;
+}
+
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+th {
+    background-color: #3498db;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #eaf2f8; /* Zebra stripes */
+}
+
+tr:hover {
+    background-color: #d1e8ff; /* Hover effect */
+}
