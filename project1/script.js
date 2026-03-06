@@ -4,7 +4,8 @@ var statusMsg = document.getElementById("statusMsg");
 
 regForm.onsubmit = function(e) {
     e.preventDefault();
-    
+
+
     var name = document.getElementById("name");
     var email = document.getElementById("email");
     var phone = document.getElementById("phone");
@@ -12,7 +13,7 @@ regForm.onsubmit = function(e) {
     var event = document.getElementById("event");
     var college = document.getElementById("college");
     var confirm = document.getElementById("confirm");
-
+    var idProof = document.getElementById('idProof');
     var gender = document.querySelector('input[name="g"]:checked');
     var mode = document.querySelector('input[name="m"]:checked');
 
@@ -25,7 +26,7 @@ regForm.onsubmit = function(e) {
         email.className = "redBorder"; ok = false;
     } else { email.className = "greenBorder"; }
 
-    if (phone.value.length != 10) {
+    if (phone.value.length == 10) {
         phone.className = "redBorder"; ok = false;
     } else { phone.className = "greenBorder"; }
 
@@ -38,8 +39,17 @@ regForm.onsubmit = function(e) {
     if (college.value == "") { college.className = "redBorder"; ok = false; } 
     else { college.className = "greenBorder"; }
 
+    if (idProof.files.length === 0) { idProof.className = "redBorder"; ok = false; } 
+    else { name.className = "greenBorder"; }
+
+
     if (!gender || !mode || !confirm.checked) {
         alert("Check all fields and the checkbox!");
+        ok = false;
+    }
+
+    else if(idProof.files.length === 0){
+        alert("Please upload the id proof");
         ok = false;
     }
 
@@ -55,5 +65,13 @@ regForm.onsubmit = function(e) {
         statusMsg.style.color = "green";
 
         regForm.reset();
+        var allInputs = [name, email, phone, dob, event, college, idProof];
+        for (var i = 0; i < allInputs.length; i++) {
+            allInputs[i].className = "";
+        setTimeout(function() {
+            statusMsg.innerHTML = "";
+        }, 3000);
+        
     }
+}
 }
