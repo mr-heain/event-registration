@@ -26,7 +26,7 @@ regForm.onsubmit = function(e) {
         email.className = "redBorder"; ok = false;
     } else { email.className = "greenBorder"; }
 
-    if (phone.value.length == 10) {
+    if (phone.value.length != 10) {
         phone.className = "redBorder"; ok = false;
     } else { phone.className = "greenBorder"; }
 
