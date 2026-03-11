@@ -27,7 +27,7 @@ regForm.onsubmit = function(e) {
     } else { email.className = "greenBorder"; }
 
     if (phone.value.length != 10) {
-        phone.className = "redBorder"; ok = false;
+        phone.className = "redBorder"; alert("Please check your phone number"); ok = false;
     } else { phone.className = "greenBorder"; }
 
     if (dob.value == "") { dob.className = "redBorder"; ok = false; } 
