@@ -30,9 +30,8 @@ A client-side event registration web app built with HTML, CSS, and JavaScript. U
 ```
 event-registration/
 ├── index.html
-├── phase-3/
-│   ├── style.css
-│   └── script.js
+├── style.css
+└── script.js
 ```
 
 ---
@@ -49,4 +48,4 @@ cd event-registration
 
 ---
 
-*Frontend project — Semester lab work (Phase 3)*
+*Frontend project — Semester lab work*
